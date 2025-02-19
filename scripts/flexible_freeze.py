@@ -357,7 +357,6 @@ for db in dblist:
             else:
                 _print("VACUUMING %s failed." % table[0])
                 _print(str(ex))
-            sys.exit(1)
 
         time.sleep(args.pause_time)
 
