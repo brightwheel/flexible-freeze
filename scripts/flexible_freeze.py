@@ -354,10 +354,7 @@ for db in dblist:
             _print(str(ex))
             if time.time() >= halt_time:
                 verbose_print("halted flexible_freeze due to enforced time limit")
-            else:
-                _print("VACUUMING %s failed." % table[0])
-                _print(str(ex))
-            sys.exit(1)
+                sys.exit(1)
 
         time.sleep(args.pause_time)
 
